@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+  <title>HYPED | <%= title %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://beta.hypeds.com/css/NexusLib_v2.0.css" media="screen">
+  <link rel="stylesheet" href="https://beta.hypeds.com/css/HPD_Loader.css">
+  <link rel="stylesheet" href="https://beta.hypeds.com/css/Sidebar.css" media="screen">
+  <link rel="stylesheet" href="https://beta.hypeds.com/css/Fursmp_UserProfile.css" media="screen">
+  <script class="u-script" type="text/javascript" src="https://beta.hypeds.com/js/jquery.js"  defer=""></script>
+  <script class="u-script" type="text/javascript" src="https://beta.hypeds.com/js/NEOHyped.js"  defer=""></script> 
+  <script>
+    async function GetAPIVersion() {
+      let response = await fetch(`https://api.hypeds.com/version`)
+      let data = await response.json()
+
+      return data.version  
+    }
+    async function fetchData() {
+      let apiversion = await GetAPIVersion()
+      console.log(`[HPD] Version: ${apiversion}`)
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+       setTimeout(function() {
+         document.querySelector("body").classList.add("loaded");
+      }, 500)
+    });
+    fetchData();
+  </script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
+    <section class="u-border-1 u-border-custom-color-2 u-border-no-left u-border-no-right u-border-no-top u-clearfix u-custom-color-3 u-section-1" id="sec-f92b">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img class="custom-expanded u-expanded-height-lg u-expanded-height-md u-expanded-height-xl u-image u-image-contain u-image-1" src="https://beta.hypeds.com/images/FURSMP_LOGO.png" data-image-width="1080" data-image-height="1080" data-href="https://fursmp.com">
+        <a href="https://fursmp.com/logout" class="u-border-1 u-border-hover-grey-40 u-border-white u-btn u-btn-round u-button-style u-gradient u-none u-radius u-text-hover-white u-text-white u-btn-1">LOGIN</a>
+        <h4 class="u-custom-font u-font-ubuntu u-text u-text-default-lg u-text-default-xl u-text-1">
+          <span style="text-decoration: underline !important;">
+            <a href="https://fursmp.com/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-2">Home</a>
+          </span>&nbsp; <span style="text-decoration: underline !important;">
+            <a href="https://fursmp.com/streamers" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-3">Streamers</a>
+          </span>&nbsp; <span style="text-decoration: underline !important;">
+            <a href="https://fursmp.com/forms" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-4">Participe</a>
+          </span>&nbsp; <span style="text-decoration: underline !important;">
+            <a href="https://fursmp.com/discord" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-5">Discord</a>
+          </span>
+        </h4>
+      </div>
+    </section>
+    <section class="u-clearfix u-gradient u-section-2" id="sec-8872">
+      <div class="u-clearfix u-sheet u-valign-middle-sm u-sheet-1">
+        <img class="u-image u-image-round u-radius u-image-1" src="<%= avatar %>" alt="" data-image-width="913" data-image-height="840">
+        <h1 class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-1"><%= title %></h1>
+        <h1 class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-2">PERFIL DINÂMICO DO FurSMP</h1>
+        <a href="https://twitter.com/intent/tweet?text=Estas+são+as+minhas+estatísticas+no+%23FurSMP%0A&amp;url=https%3A%2F%2Fapi.hypeds.com%2Fv7%2Fusers%2Ffursmp%2Fprofiles%2F<%= userid %>" class="u-border-1 u-border-white u-btn u-btn-round u-button-style u-gradient u-none u-radius u-text-body-alt-color u-btn-1">Compartilhe Seu Perfil</a>
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-2 u-section-3" id="sec-abdf">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="custom-expanded u-layout-horizontal u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-1">
+                <div class="custom-expanded u-container-style u-custom-item u-gradient u-group u-radius u-shape-round u-group-1">
+                  <div class="u-container-layout">
+                    <h3 class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-default u-text-1">Foram:</h3>
+                    <h5 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-default u-text-2"><%= mobs %> Mobs mortos até agora😎</h5>
+                    <h5 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-3"><%= kills %> PVP's Ganhos até agora! 🫡</h5>
+                    <h5 class="u-align-center u-custom-font u-custom-item u-font-oswald u-text u-text-body-alt-color u-text-4"><%= deaths %> vezes que você morreu&nbsp;🥺</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-3">
+                <div class="custom-expanded u-container-style u-custom-item u-gradient u-group u-radius u-shape-round u-group-2">
+                  <div class="u-container-layout">
+                    <h3 class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-default u-text-5">Ficou por:</h3>
+                    <h5 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-default u-text-6"><%= playtime %>&nbsp; NO SERVIDOR😮</h5>
+                    <h5 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-7"><%= afk_time %>&nbsp; AFK 😴</h5>
+                    <h5 class="u-align-center u-custom-font u-custom-item u-font-oswald u-text u-text-body-alt-color u-text-8"><%= active_playtime %>&nbsp; ONLINE 🤓</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-5">
+                <div class="custom-expanded u-container-style u-custom-item u-gradient u-group u-radius u-shape-round u-group-3">
+                  <div class="u-container-layout">
+                    <h3 class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-default u-text-9">Enviou:</h3>
+                    <h5 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-default u-text-10"><%= messages %> Mensagens nos chats do Discord 😳<br>
+                    </h5>
+                    <h5 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-11"><%= commandsNumber %> Comandos com o bot da Hyped</h5>
+                    <h5 class="u-align-center u-custom-font u-custom-item u-font-oswald u-text u-text-body-alt-color u-text-12"><%= shortiturls %> Url's para encurtar com o ShortIT</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="u-absolute-vcenter-lg u-absolute-vcenter-xl u-gallery-nav u-gallery-nav-prev u-icon-rectangle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1" href="#" role="button">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+          </a>
+          <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-icon-rectangle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2" href="#" role="button">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-gradient u-section-4" id="sec-cc6f">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-align-center u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-1">Obrigado por fazer parte da comunidade do FurSMP! 💖</h1>
+      </div>
+    </section>
+
+
+
+    <footer class="u-align-center u-clearfix u-footer u-grey-90 u-footer" id="sec-7a5d"><div class="u-clearfix u-sheet u-sheet-1">
+        <h5 class="u-text u-text-default u-text-1">Certificados</h5>
+        <h6 class="u-text u-text-default u-text-2">Powered by <br>HYPED GROUP 2024
+        </h6>
+        <a href="https://www.hypeds.com/login?redirectTo=https://www.hypeds.com/" class="u-border-1 u-border-white u-btn u-btn-round u-button-style u-none u-radius-10 u-text-body-alt-color u-text-hover-white u-btn-1">Login</a>
+        <h6 class="u-text u-text-default u-text-3">Links Úteis<br>
+          <a href="https://status.hypeds.com/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2">Status Page<br>
+          </a>
+          <a href="https://api.hypeds.com/docs" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-3" target="_blank">API</a>
+          <br>
+          <a href="https://www.hypeds.com/discord" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-4">Discord</a>
+          <br>
+          <a href="https://hpd.ink" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-5">Encurtador</a>
+        </h6>
+        <img class="u-image u-image-contain u-image-default u-image-1" src="https://beta.hypeds.com/images/google-safe-browsing.png" alt="" data-image-width="844" data-image-height="243" data-href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fwww.hypeds.com&amp;hl=pt_BR" data-target="_blank">
+        <h6 class="u-text u-text-default u-text-4">
+          <a href="https://www.hypeds.com/about" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-6">Sobre Nós</a>
+          <br>
+          <a href="https://www.hypeds.com/support" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-7">Suporte</a>
+          <br>
+          <a href="https://www.hypeds.com/privacypolicy" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-8">Políticas de Privacidade<br>
+          </a>
+          <a href="https://www.hypeds.com/tos" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-9">Termos de Serviço</a>
+          <br>
+          <a href="https://www.hypeds.com/cookies" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-10">Cookies</a>
+        </h6>
+        <img class="u-image u-image-contain u-image-default u-image-2" src="https://beta.hypeds.com/images/ssl-secure.png" alt="" data-image-width="713" data-image-height="200" data-href="https://www.sslchecker.com/sslchecker?su=da98d944ba1834a64794f688375a401b" data-target="_blank">
+        <div class="u-social-icons u-spacing-10 u-social-icons-1">
+          <a class="u-social-url" title="facebook" target="_blank" href="https://www.hypeds.com/facebook"><span class="u-icon u-social-facebook u-social-icon u-text-white u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-753e"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-753e"><path fill="currentColor" d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2
+c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path></svg></span>
+          </a>
+          <a class="u-social-url" title="twitter" target="_blank" href="https://www.hypeds.com/twitter"><span class="u-icon u-social-icon u-social-twitter u-text-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ec45"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-ec45"><path fill="currentColor" d="M92.2,38.2c0,0.8,0,1.6,0,2.3c0,24.3-18.6,52.4-52.6,52.4c-10.6,0.1-20.2-2.9-28.5-8.2
+  c1.4,0.2,2.9,0.2,4.4,0.2c8.7,0,16.7-2.9,23-7.9c-8.1-0.2-14.9-5.5-17.3-12.8c1.1,0.2,2.4,0.2,3.4,0.2c1.6,0,3.3-0.2,4.8-0.7
+  c-8.4-1.6-14.9-9.2-14.9-18c0-0.2,0-0.2,0-0.2c2.5,1.4,5.4,2.2,8.4,2.3c-5-3.3-8.3-8.9-8.3-15.4c0-3.4,1-6.5,2.5-9.2
+  c9.1,11.1,22.7,18.5,38,19.2c-0.2-1.4-0.4-2.8-0.4-4.3c0.1-10,8.3-18.2,18.5-18.2c5.4,0,10.1,2.2,13.5,5.7c4.3-0.8,8.1-2.3,11.7-4.5
+  c-1.4,4.3-4.3,7.9-8.1,10.1c3.7-0.4,7.3-1.4,10.6-2.9C98.9,32.3,95.7,35.5,92.2,38.2z"></path></svg></span>
+          </a>
+          <a class="u-social-url" title="instagram" target="_blank" href="https://www.hypeds.com/instagram"><span class="u-icon u-social-icon u-social-instagram u-text-white u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ea92"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-ea92"><path fill="currentColor" d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z
+   M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z"></path><path fill="#FFFFFF" d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z"></path><path fill="currentColor" d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7
+  V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7
+  c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z"></path></svg></span>
+          </a>
+        </div>
+      </div></footer>
+</body></html>

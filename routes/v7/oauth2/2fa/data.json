@@ -1,0 +1,12 @@
+{
+  "config": {
+    "2fa_required": true,
+    "mailPassword": "contato@621"
+  },
+  "codes": {
+    "101": "Aguarde alguns segundos para tentar novamente",
+    "102": "Seus dados de Login estão adulterados",
+    "103": "Token de autorização expirado! Dê um refresh na página e tente novamente!",
+    "104": "Enviamos novamente seu código! Tenha certeza de verificar sua caixa de SPAM!"
+  }
+}

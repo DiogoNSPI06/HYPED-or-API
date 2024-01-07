@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+  <title>HYPED | <%= title %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://beta.hypeds.com/css/NexusLib_v1.5.css" media="screen">
+  <link rel="stylesheet" href="https://beta.hypeds.com/css/HPD_Loader.css">
+  <link rel="stylesheet" href="https://beta.hypeds.com/css/Sidebar.css" media="screen">
+  <link rel="stylesheet" href="https://beta.hypeds.com/css/HPD_PAY_Product_1.css" media="screen">
+  <script class="u-script" type="text/javascript" src="https://beta.hypeds.com/js/jquery.js"  defer=""></script>
+  <script class="u-script" type="text/javascript" src="https://beta.hypeds.com/js/NEOHyped.js"  defer=""></script> 
+  <script>
+    async function GetAPIVersion() {
+      let response = await fetch(`https://api.hypeds.com/version`)
+      let data = await response.json()
+
+      return data.version  
+    }
+    async function fetchData() {
+      let apiversion = await GetAPIVersion()
+      console.log(`[HPD] Version: ${apiversion}`)
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+       setTimeout(function() {
+         document.querySelector("body").classList.add("loaded");
+      }, 500)
+    });
+    fetchData();
+  </script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en"><header class="u-black u-border-2 u-border-grey-50 u-border-no-left u-border-no-right u-border-no-top u-box-shadow u-clearfix u-header u-header" id="sec-b24e"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://www.hypeds.com" class="u-image u-logo u-image-1" data-image-width="640" data-image-height="642" title="hyped_home">
+          <img src="https://beta.hypeds.com/images/hyped1.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="MD" data-submenu-level="on-click">
+          <div class="menu-collapse" style="font-size: 1.25rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+            <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-border-radius u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-text-shadow u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 4px; font-size: calc(1em + 8px);">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white" href="https://www.hypeds.com/" style="padding: 10px 0px;">Home</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white" style="padding: 10px 0px;">Bots</a><div class="u-nav-popup"><ul class="u-border-1 u-border-grey-90 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-active-grey-75 u-black u-button-style u-hover-grey-80 u-nav-link" href="https://www.hypeds.com/hypedbot">HYPED BOT</a>
+</li><li class="u-nav-item"><a class="u-active-grey-75 u-black u-button-style u-hover-grey-80 u-nav-link" href="https://www.hypeds.com/hypedmusic">HYPED MUSIC</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white" style="padding: 10px 0px;">Neot</a><div class="u-nav-popup"><ul class="u-border-1 u-border-grey-90 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-active-grey-75 u-black u-button-style u-hover-grey-80 u-nav-link" href="https://www.neotcom.co/">Home</a>
+</li><li class="u-nav-item"><a class="u-active-grey-75 u-black u-button-style u-hover-grey-80 u-nav-link" href="https://www.neotcom.co/products">Produtos</a>
+</li><li class="u-nav-item"><a class="u-active-grey-75 u-black u-button-style u-hover-grey-80 u-nav-link" href="https://www.neotcom.co/login">Painel</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white" style="padding: 10px 0px;">Soluções</a><div class="u-nav-popup"><ul class="u-border-1 u-border-grey-90 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-active-grey-75 u-black u-button-style u-hover-grey-80 u-nav-link" href="https://beta.hypeds.com/communities">Communities</a>
+</li><li class="u-nav-item"><a class="u-active-grey-75 u-black u-button-style u-hover-grey-80 u-nav-link" href="https://www.hypeds.tv">Hyped TV</a>
+</li><li class="u-nav-item"><a class="u-active-grey-75 u-black u-button-style u-hover-grey-80 u-nav-link" href="https://www.hypeds.com/minecraft">Minecraft</a>
+</li><li class="u-nav-item"><a class="u-active-grey-75 u-black u-button-style u-hover-grey-80 u-nav-link" href="https://hpd.ink">ShortIT</a>
+</li><li class="u-nav-item"><a class="u-active-grey-75 u-black u-button-style u-hover-grey-80 u-nav-link" href="https://shareit.hypeds.com">ShareIT</a>
+</li><li class="u-nav-item"><a class="u-active-grey-75 u-black u-button-style u-hover-grey-80 u-nav-link" href="https://edu.hypeds.com">Education</a>
+</li><li class="u-nav-item"><a class="u-active-grey-75 u-black u-button-style u-hover-grey-80 u-nav-link" href="https://beta.hypeds.com/news">Newsletter</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white" style="padding: 10px 0px;">Hosting</a><div class="u-nav-popup"><ul class="u-border-1 u-border-grey-90 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-active-grey-75 u-black u-button-style u-hover-grey-80 u-nav-link" href="https://www.hypeds.com/hypedhost">HYPED HOSTING</a>
+</li><li class="u-nav-item"><a class="u-active-grey-75 u-black u-button-style u-hover-grey-80 u-nav-link" href="https://www.hypeds.com/hypedcloud">HYPED CLOUD</a>
+</li></ul>
+</div>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-sidenav u-sidenav-1" data-offcanvas-width="227">
+              <div class="u-inner-container-layout u-sidenav-overflow" style="padding: 0px;">
+                <div class="u-menu-close u-menu-close-1"></div>
+                <ul class="u-align-left u-nav u-popupmenu-items u-spacing-15 u-unstyled u-nav-6"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.hypeds.com/">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Bots</a><div class="u-nav-popup"><ul class="u-border-1 u-border-grey-90 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.hypeds.com/hypedbot">HYPED BOT</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.hypeds.com/hypedmusic">HYPED MUSIC</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Neot</a><div class="u-nav-popup"><ul class="u-border-1 u-border-grey-90 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.neotcom.co/">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.neotcom.co/products">Produtos</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.neotcom.co/login">Painel</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Soluções</a><div class="u-nav-popup"><ul class="u-border-1 u-border-grey-90 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://beta.hypeds.com/communities">Communities</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.hypeds.tv">Hyped TV</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.hypeds.com/minecraft">Minecraft</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://hpd.ink">ShortIT</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://shareit.hypeds.com">ShareIT</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://edu.hypeds.com">Education</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://beta.hypeds.com/news">Newsletter</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Hosting</a><div class="u-nav-popup"><ul class="u-border-1 u-border-grey-90 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.hypeds.com/hypedhost">HYPED HOSTING</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.hypeds.com/hypedcloud">HYPED CLOUD</a>
+</li></ul>
+</div>
+</li></ul>
+                <div class="u-border-3 u-border-white u-line u-line-horizontal u-line-1"></div>
+                <h6 class="u-text u-text-default u-text-1">Mais da Hyped</h6>
+                <h3 class="u-text u-text-default u-text-2">
+                  <a href="https://hypeds.tv" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">Hyped Tv<br>
+                  </a>
+                  <br>
+                  <a href="https://hpd.ink" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-2">ShortIT</a>
+                  <br>
+                  <br>
+                  <a href="https://www.hypeds.com/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-3">Hyped Group</a>
+                  <br>
+                  <br>
+                  <a href="https://www.hypeds.com/hypedbot" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-4">Hyped Bots</a>
+                  <br>
+                  <br>
+                  <a href="https://beta.hypeds.com/hypedhosting" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-5">Hyped Hosting</a>
+                  <br>
+                </h3>
+              </div>
+            </div>
+            <div class="u-menu-overlay"></div>
+          </div>
+        </nav>
+        <a href="https://www.hypeds.com/login?redirectTo=https://www.hypeds.com/dashboard" class="u-border-1 u-border-white u-btn u-btn-round u-button-style u-none u-radius-10 u-text-body-alt-color u-text-hover-white u-btn-6">LOGIN</a>
+      </div></header>
+    <section class="u-clearfix u-grey-80 u-section-1" id="sec-7385">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-sheet-1">
+        <div class="u-carousel u-expanded-width-sm u-expanded-width-xs u-gallery u-gallery-slider u-layout-carousel u-lightbox u-no-transition u-show-text-on-hover u-thumbnails-position-left u-gallery-1" id="carousel-60da" data-interval="5000" data-u-ride="carousel">
+          <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
+            <li data-u-target="#carousel-60da" data-u-slide-to="0" class="u-active u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-60da" data-u-slide-to="1" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-60da" data-u-slide-to="2" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+          </ol>
+          <div class="u-carousel-inner u-gallery-inner" role="listbox">
+            <div class="u-active u-carousel-item u-effect-fade u-gallery-item u-shape-rectangle u-carousel-item-1">
+              <div class="u-back-slide" data-image-width="250" data-image-height="250">
+                <img class="u-back-image u-expanded" src="<%= productImage1 %>">
+              </div>
+              <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-1"></div>
+            </div>
+            <div class="u-carousel-item u-effect-fade u-gallery-item u-shape-rectangle u-carousel-item-2">
+              <div class="u-back-slide" data-image-width="250" data-image-height="250">
+                <img class="u-back-image u-expanded" src="<%= productImage2 %>">
+              </div>
+              <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-2"></div>
+            </div>
+            <div class="u-carousel-item u-effect-fade u-gallery-item u-shape-rectangle u-carousel-item-3" data-image-width="2836" data-image-height="1875">
+              <div class="u-back-slide" data-image-width="250" data-image-height="250">
+                <img class="u-back-image u-expanded" src="<%= productImage3 %>">
+              </div>
+              <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-3"></div>
+            </div>
+          </div>
+          <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-1" href="#carousel-60da" role="button" data-u-slide="prev">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+          </a>
+          <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-2" href="#carousel-60da" role="button" data-u-slide="next">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+          </a>
+        </div>
+        <div class="u-container-style u-expanded-width-xs u-grey-90 u-group u-radius-10 u-shape-round u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <div class="u-absolute-hcenter-lg u-absolute-hcenter-md u-absolute-hcenter-sm u-absolute-hcenter-xl u-border-1 u-border-grey-40 u-line u-line-horizontal u-line-1"></div>
+            <div class="u-absolute-hcenter-lg u-absolute-hcenter-md u-absolute-hcenter-sm u-absolute-hcenter-xl u-border-1 u-border-grey-40 u-line u-line-horizontal u-line-2"></div>
+            <h6 class="u-text u-text-default u-text-grey-30 u-text-1"><%= productType %> - <%= productID %></h6>
+            <h3 class="u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-2"><%= productName %></h3>
+            <h2 class="u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-3">R$ <%= productPrice %></h2>
+            <h6 class="u-text u-text-default u-text-4">Pague parcelado</h6>
+            <script>
+              function buttonPressed() {
+                fetch("https://api.hypeds.com/v7/payments/cart/addproduct?productID=<%= productID %>&tempToken=<%= tempToken %>")
+
+                window.location.href = "https://api.hypeds.com/v7/payments/cart"
+              }
+
+              window.onload = () => {
+                document.querySelector('#addtocart').addEventListener('click', () => {
+                  buttonPressed()
+                })
+              }
+            </script>
+            <a href="https://api.hypeds.com/v7/payments/checkout/review?productID=<%= productID %>" class="u-border-none u-btn u-btn-round u-button-style u-gradient u-none u-radius-10 u-btn-1">COMPRAR</a>
+            <button id="addtocart" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-2 u-radius-10 u-btn-2">ADICIONAR AO CARRINHO</button>
+            <h1 class="u-text u-text-default u-text-grey-25 u-text-5">Meios de pag​amento</h1>
+            <h1 class="u-text u-text-default u-text-grey-25 u-text-6">Crédito até 12x c/ juros</h1>
+            <div class="u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-none u-gallery-2">
+              <div class="u-gallery-inner u-gallery-inner-2">
+                <div class="u-effect-hover-zoom u-gallery-item">
+                  <div class="u-back-slide" data-image-width="42" data-image-height="32">
+                    <img class="u-back-image u-expanded" src="https://http2.mlstatic.com/storage/logos-api-admin/a5f047d0-9be0-11ec-aad4-c3381f368aaf-m.svg">
+                  </div>
+                  <div class="u-over-slide u-shading u-over-slide-4"></div>
+                </div>
+                <div class="u-effect-hover-zoom u-gallery-item">
+                  <div class="u-back-slide" data-image-width="31" data-image-height="32">
+                    <img class="u-back-image u-expanded" src="https://http2.mlstatic.com/storage/logos-api-admin/aa2b8f70-5c85-11ec-ae75-df2bef173be2-m.svg">
+                  </div>
+                  <div class="u-over-slide u-shading u-over-slide-5"></div>
+                </div>
+                <div class="u-effect-hover-zoom u-gallery-item">
+                  <div class="u-back-slide" data-image-width="53" data-image-height="32">
+                    <img class="u-back-image u-expanded" src="https://http2.mlstatic.com/storage/logos-api-admin/ddf23a60-f3bd-11eb-a186-1134488bf456-m.svg">
+                  </div>
+                  <div class="u-over-slide u-shading u-over-slide-6"></div>
+                </div>
+                <div class="u-effect-hover-zoom u-gallery-item">
+                  <div class="u-back-slide" data-image-width="37" data-image-height="32">
+                    <img class="u-back-image u-expanded" src="https://http2.mlstatic.com/storage/logos-api-admin/ed8d6fd0-f3bd-11eb-9984-b7076edb0bb7-m.svg">
+                  </div>
+                  <div class="u-over-slide u-shading u-over-slide-7"></div>
+                </div>
+              </div>
+            </div>
+            <h1 class="u-text u-text-default u-text-grey-25 u-text-7">Débito à vista</h1>
+            <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="https://beta.hypeds.com/images/d2407420-f3bd-11eb-8e0d-6f4af49bf82e-m.svg" alt="" data-image-width="61" data-image-height="32">
+            <h1 class="u-text u-text-default u-text-grey-25 u-text-8">Pix à vista ou boleto</h1>
+            <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-2" src="https://beta.hypeds.com/images/200454b0-13c2-11eb-a75e-3f6b552aa946-m.svg" alt="" data-image-width="32" data-image-height="32">
+            <img class="u-image u-image-default u-preserve-proportions u-image-3" src="https://beta.hypeds.com/images/00174300-571e-11e8-8364-bff51f08d440-m.svg" alt="" data-image-width="28" data-image-height="32">
+          </div>
+        </div>
+        <div class="u-border-1 u-border-grey-40 u-line u-line-horizontal u-line-3"></div>
+        <h3 class="u-text u-text-default u-text-grey-15 u-text-9">Descrição</h3>
+        <h5 class="u-text u-text-10"><%= productDescription %></h5>
+      </div>
+    </section>
+
+
+    <footer class="u-align-center u-clearfix u-footer u-grey-90 u-footer" id="sec-7a5d"><div class="u-clearfix u-sheet u-sheet-1">
+        <h5 class="u-text u-text-default u-text-1">Certificados</h5>
+        <h6 class="u-text u-text-default u-text-2">Powered by <br>HYPED GROUP 2023
+        </h6>
+        <a href="https://www.hypeds.com/login?redirectTo=https://www.hypeds.com/" class="u-border-1 u-border-white u-btn u-btn-round u-button-style u-none u-radius-10 u-text-body-alt-color u-text-hover-white u-btn-1">Login</a>
+        <h6 class="u-text u-text-default u-text-3">Links Úteis<br>
+          <a href="https://status.hypeds.com/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2">Status Page<br>
+          </a>
+          <a href="https://api.hypeds.com/docs" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-3" target="_blank">API</a>
+          <br>
+          <a href="https://www.hypeds.com/discord" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-4">Discord</a>
+          <br>
+          <a href="https://hpd.ink" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-5">Encurtador</a>
+        </h6>
+        <img class="u-image u-image-contain u-image-default u-image-1" src="https://beta.hypeds.com/images/google-safe-browsing.png" alt="" data-image-width="844" data-image-height="243" data-href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fwww.hypeds.com&amp;hl=pt_BR" data-target="_blank">
+        <h6 class="u-text u-text-default u-text-4">
+          <a href="https://www.hypeds.com/about" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-6">Sobre Nós</a>
+          <br>
+          <a href="https://www.hypeds.com/support" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-7">Suporte</a>
+          <br>
+          <a href="https://www.hypeds.com/privacypolicy" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-8">Políticas de Privacidade<br>
+          </a>
+          <a href="https://www.hypeds.com/tos" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-9">Termos de Serviço</a>
+          <br>
+          <a href="https://www.hypeds.com/cookies" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-10">Cookies</a>
+        </h6>
+        <img class="u-image u-image-contain u-image-default u-image-2" src="https://beta.hypeds.com/images/ssl-secure.png" alt="" data-image-width="713" data-image-height="200" data-href="https://www.sslchecker.com/sslchecker?su=da98d944ba1834a64794f688375a401b" data-target="_blank">
+        <div class="u-social-icons u-spacing-10 u-social-icons-1">
+          <a class="u-social-url" title="facebook" target="_blank" href="https://www.hypeds.com/facebook"><span class="u-icon u-social-facebook u-social-icon u-text-white u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-753e"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-753e"><path fill="currentColor" d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2
+c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path></svg></span>
+          </a>
+          <a class="u-social-url" title="twitter" target="_blank" href="https://www.hypeds.com/twitter"><span class="u-icon u-social-icon u-social-twitter u-text-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ec45"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-ec45"><path fill="currentColor" d="M92.2,38.2c0,0.8,0,1.6,0,2.3c0,24.3-18.6,52.4-52.6,52.4c-10.6,0.1-20.2-2.9-28.5-8.2
+  c1.4,0.2,2.9,0.2,4.4,0.2c8.7,0,16.7-2.9,23-7.9c-8.1-0.2-14.9-5.5-17.3-12.8c1.1,0.2,2.4,0.2,3.4,0.2c1.6,0,3.3-0.2,4.8-0.7
+  c-8.4-1.6-14.9-9.2-14.9-18c0-0.2,0-0.2,0-0.2c2.5,1.4,5.4,2.2,8.4,2.3c-5-3.3-8.3-8.9-8.3-15.4c0-3.4,1-6.5,2.5-9.2
+  c9.1,11.1,22.7,18.5,38,19.2c-0.2-1.4-0.4-2.8-0.4-4.3c0.1-10,8.3-18.2,18.5-18.2c5.4,0,10.1,2.2,13.5,5.7c4.3-0.8,8.1-2.3,11.7-4.5
+  c-1.4,4.3-4.3,7.9-8.1,10.1c3.7-0.4,7.3-1.4,10.6-2.9C98.9,32.3,95.7,35.5,92.2,38.2z"></path></svg></span>
+          </a>
+          <a class="u-social-url" title="instagram" target="_blank" href="https://www.hypeds.com/instagram"><span class="u-icon u-social-icon u-social-instagram u-text-white u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ea92"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-ea92"><path fill="currentColor" d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z
+   M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z"></path><path fill="#FFFFFF" d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z"></path><path fill="currentColor" d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7
+  V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7
+  c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z"></path></svg></span>
+          </a>
+        </div>
+      </div></footer>
+</body></html>

@@ -1,0 +1,12 @@
+{
+  "files": {
+    "routes/v7/payments/checkout/pay/views/product_2.ejs": [
+      {
+        "id": "7201f041-6224-4eb1-9578-ea2f53285416",
+        "line": 1,
+        "version": 4,
+        "index": 0
+      }
+    ]
+  }
+}
